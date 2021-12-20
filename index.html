@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#3F37C9" />
+    <title>LowBash | Register</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="mockup">
+            <div class="mockup-content">
+                <h1 class="title">LowBash.</h1>
+                <p class="ads">
+                    Create a new account. <br> and get one course <br> <span class="free">FOR FREE</span>
+                </p>
+                <ul class="social-nav">
+                    <li><a href="#" class="social-nav-item"><img src="./assets/facebook.svg" alt="facebook"></a></li>
+                    <li><a href="#" class="social-nav-item"><img src="./assets/instagram.svg" alt="instagram"></a></li>
+                    <li><a href="#" class="social-nav-item"><img src="./assets/linkedin.svg" alt="linkedin"></a></li>
+                    <li><a href="#" class="social-nav-item"><img src="./assets/twitter.svg" alt="twitter"></a></li>
+                </ul>
+            </div>
+            <div class="mockup-bg">
+                <div class="circle-one"></div>
+                <div class="circle-two"></div>
+                <div class="bg-one">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="578.906" height="402.093"
+                        viewBox="0 0 578.906 402.093">
+                        <path id="bg-one"
+                            d="M0,0S-45.4-159.746,280.6,0,575.986,0,575.986,0V299.623s-140.6-106.52-328.372-13.665S0,299.623,0,299.623Z"
+                            transform="translate(2.154 70.998)" fill="#4361ee" />
+                    </svg>
+                </div>
+                <div class="bg-two">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="577" height="147.065" viewBox="0 0 577 147.065">
+                        <path id="bg-two"
+                            d="M0,0S255.55,40.271,412.884,0,577,0,577,0V67.255S539.671,14.875,317.512,94,0,94,0,94Z"
+                            transform="translate(0 17.898)" fill="#4361ee" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="form-wrapper">
+            <h2 class="subtitle">Lets get started.</h2>
+            <form class="form" action="#" autocomplete="off">
+                <div class="input-container">
+                    <div class="input-wrapper">
+                        <input type="text" required name="name" id="name">
+                        <label for="name">Name</label>
+                        <small class="err-msg">*Your input isn't valid, enter your name.
+                            <b class="err-info" title="No special character & less then  64 characters allowed">!</b>
+                        </small>
+                    </div>
+                    <div class="input-wrapper">
+                        <input class="fill" required type="date" name="birthDay" id="birthDay">
+                        <label for="birthDay">Birth day</label>
+                        <small class="err-msg">*This format is invalid</small>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="email" required name="email" id="email">
+                        <label for="email">Email</label>
+                        <small class="err-msg">*Please enter a valid Email.</small>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" required name="username" id="username">
+                        <label for="username">Username</label>
+                        <small class="err-msg">*Username invalid.
+                            <b class="err-info" title="Atleast 3 characters or above">!</b>
+                        </small>
+                    </div>
+                    <div class="radio">
+                        <span class="radio-title">Choose one of the following course</span>
+                        <div class="radio-container">
+                            <div class="radio-wrapper">
+                                <input type="radio" name="course" value="Design Graphic" id="designGraphic">
+                                <label for="designGraphic">Design Graphic</label>
+                            </div>
+                            <div class="radio-wrapper">
+                                <input type="radio" name="course" value="Web Development" id="webDevelopment">
+                                <label for="webDevelopment">Web Development</label>
+                            </div>
+                            <div class="radio-wrapper">
+                                <input type="radio" name="course" value="Logo Design" id="logoDesign">
+                                <label for="logoDesign">Logo Design</label>
+                            </div>
+                            <div class="radio-wrapper">
+                                <input type="radio" name="course" value="UI/UX" id="uiUx">
+                                <label for="uiUx">UI/UX</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="password" required name="password" id="password">
+                        <label for="password">Password</label>
+                        <span data-visible="0" class="show-btn"><img src="./assets/visible-off.svg"></span>
+                        <small class="err-msg">*Password atleast 7 characters or more</small>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="password" required name="confirm-password" id="confirmPassword">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <span data-visible="0" class="show-btn"><img src="./assets/visible-off.svg"></span>
+                        <small class="err-msg">*Password doesn't match</small>
+                    </div>
+                </div>
+                <span class="agreement">
+                    By creating an account, you agree to our
+                    <a href="#">Terms & Conditions</a>
+                </span>
+                <button class="register-btn" id="register">Register</button>
+            </form>
+            <span class="sign-in">Already have an account? <a href="#">Sign in</a></span>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal-wrapper" id="modal">
+        <div class="modal">
+            <h3>Your account has been created.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button class="close-modal">Close</button>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
